@@ -1,3 +1,63 @@
+@charset "UTF-8";
+
+/*Global open*/
+.hidden{
+	display: none;
+}
+
+/* General rules - scales images, videos to size of container */
+img, embed, object, video {
+  max-width: 100%; }
+
+
+/*switch box model*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/*Fix for scaling of images IE*/
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/*Fonts*/
+@font-face {
+font-family: 'lustriaregular';
+src: url('../fonts/lustria-regular-webfont.eot');
+src: url('../fonts/lustria-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/lustria-regular-webfont.woff') format('woff'),
+url('../fonts/lustria-regular-webfont.ttf') format('truetype'),
+url('../fonts/lustria-regular-webfont.svg#lustriaregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'latoregular';
+src: url('../fonts/lato-regular-webfont.eot');
+src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../fonts/lato-regular-webfont.woff') format('woff'),
+url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+body{
+	font-family: 'latoregular', Helvetica, Arial, sans-serif;
+  background-color: #E9E9E9 ;
+}
+
+a{
+  font-family: 'latoregular', Helvetica, Arial, sans-serif;
+  text-decoration: none;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -14,8 +74,9 @@
 .team-section h1{
   text-transform: uppercase;
   margin-bottom: 60px;
-  color: white;
+  color: #3498db;
   font-size: 40px;
+
 }
 
 .team-section p{
